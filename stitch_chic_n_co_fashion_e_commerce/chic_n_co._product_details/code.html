@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1b1c1a", "on-primary": "#ffffff", "on-secondary-container": "#590027", "on-tertiary-fixed": "#241a00", "tertiary-fixed-dim": "#e9c349", "on-secondary-fixed-variant": "#8f0042", "on-primary-fixed-variant": "#47464a", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "outline": "#77767b", "surface-dim": "#dbdad6", "secondary-fixed": "#ffd9e0", "on-background": "#1b1c1a", "primary": "#000000", "on-error": "#ffffff", "primary-fixed-dim": "#c8c5ca", "primary-container": "#1b1b1e", "on-tertiary-container": "#4f3e00", "secondary-container": "#fd4e8a", "inverse-on-surface": "#f2f0ed", "on-primary-fixed": "#1b1b1e", "surface-tint": "#5f5e61", "surface-container-low": "#f5f3ef", "tertiary-container": "cca830", "surface-container-highest": "#e4e2de", "secondary-fixed-dim": "#ffb1c3", "tertiary-fixed": "#ffe088", "background": "#fbf9f5", "on-surface-variant": "#47464b", "surface": "#fbf9f5", "on-tertiary-fixed-variant": "#574500", "on-tertiary": "#ffffff", "tertiary": "#735c00", "surface-container-high": "#eae8e4", "inverse-primary": "#c8c5ca", "outline-variant": "#c8c5cb", "on-error-container": "#93000a", "on-secondary-fixed": "#3f0019", "secondary": "#b81059", "surface-bright": "#fbf9f5", "surface-container": "#efeeea", "surface-variant": "#e4e2de", "primary-fixed": "#e4e1e6", "inverse-surface": "#30312e", "on-primary-container": "#858387", "error": "#ba1a1a", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-mobile": "1rem", "margin": "3rem", "gutter": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "display-hero": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "label-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "title-editorial": [ "Playfair Display" ], "headline-md": [ "Playfair Display" ], "price-headline": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ], "display-hero-mobile": [ "Playfair Display" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "title-editorial": [ "18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "fontWeight": "500" } ], "price-headline": [ "20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.04)]"><div class="bg-secondary-fixed/50 py-1.5 px-margin text-center overflow-hidden"><p class="font-label-sm text-label-sm uppercase tracking-widest text-on-secondary-fixed">Free Worldwide Express Shipping on Orders Over $120 • Use code CHIC15 for 15% off your first order • Complimentary Gift Packaging</p></div><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="Chic N Co. Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XxsK-IQFDu8j8W5jnMqIUjMpnb6mgGBvYX-eomQMvfpkVb5mkgCpTodUIfzORDdt2OMSSUmphL2XZymRFuq1F3p2jGeQbNkOdiw_WbbJP_SrX24UZYtq2DPfO-gieFKMWZ61awkKhRWI4uCTRpS6a8bLtgMzi7PV5YEKavrbTuBgYtXkVFKE6V0beWPmd0dwqYdzntui-cS2PwLkEO4qJDkRx74FwU_feMXqWgrGqIVNsIaSwyAMdPvpao"/><span class="font-title-editorial text-title-editorial tracking-tight text-on-surface uppercase">Chic N Co.</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="uppercase tracking-wider transition-colors text-primary font-bold" data-path="shop" href="#">Shop</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="new-arrivals" href="#">New Arrivals</a><div class="relative group flex items-center gap-space-xs cursor-pointer"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#">Categories</a><span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:rotate-180 transition-transform duration-200">expand_more</span></div><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search Atelier" class="hidden md:flex items-center gap-space-sm py-1.5 px-3 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-[0_1px_6px_rgba(0,0,0,0.03)] transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Search...</span><kbd class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">⌘K</kbd></button><a aria-label="Wishlist" class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px]">3</span></a><button aria-label="Shopping Cart" class="flex items-center gap-space-xs py-1.5 px-3 rounded-full bg-surface-container-lowest hover:bg-surface-container-high transition-all shadow-[0_1px_6px_rgba(0,0,0,0.03)]" type="button"><div class="relative flex items-center"><span class="material-symbols-outlined text-[20px] text-on-surface">shopping_bag</span><span class="absolute -top-1.5 -right-2 flex items-center justify-center w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-[10px]">2</span></div><span class="font-label-md text-label-md text-on-surface font-semibold ml-1.5 hidden sm:inline">$188.00</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzQFxsQtOc2mCcTTVCu54CQxQzEkM482GSE3FhqsZrnI7hyXb7XSLQEqYILyCicTATJlRKQtM3A1or3FM3pu6nFoxmNun1nkj1lj2lRMRYgybgVubDDjVTv0fgFaHIIB4djj077_o_1m16s-an2Ywiy-DVwaQqS1P3IhteOOG1RsPOeVv6jKQAkVqWcmAR7HH1fksKiZ77tNFKUsd9Ad0EZOcZ2eR8nIMRYZ3ey2oCnaihs85cpzSRCA"/></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Social Proof Ribbon -->
+<section class="max-w-[1440px] mx-auto w-full px-margin py-4">
+<div class="flex flex-wrap items-center justify-between gap-y-2">
+<nav aria-label="Breadcrumbs" class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-on-surface-variant/40">/</span>
+<a class="hover:text-primary transition-colors" href="#">Shop</a>
+<span class="text-on-surface-variant/40">/</span>
+<a class="hover:text-primary transition-colors" href="#">Dresses</a>
+<span class="text-on-surface-variant/40">/</span>
+<span class="text-on-surface font-semibold truncate max-w-[240px] md:max-w-none">The Florentine Pleated Satin Maxi</span>
+</nav>
+<div class="hidden sm:flex items-center gap-space-sm font-label-sm text-label-sm text-secondary tracking-widest uppercase bg-secondary-fixed/40 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>High Demand: 18 atelier shoppers viewing right now</span>
+</div>
+</div>
+</section>
+<!-- Main Product Stage (Split 55% Gallery / 45% Sticky Purchase Column) -->
+<section class="max-w-[1440px] mx-auto w-full px-margin pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Gallery (7 cols = ~58%) -->
+<div class="lg:col-span-7 flex flex-col-reverse md:flex-row gap-space-md items-start">
+<!-- Thumbnail Strip -->
+<div class="flex md:flex-col gap-3 w-full md:w-20 overflow-x-auto md:overflow-visible shrink-0 pb-2 md:pb-0" id="thumb-strip">
+<button class="relative w-16 h-20 md:w-20 md:h-24 rounded-lg overflow-hidden shrink-0 transition-all ring-2 ring-primary focus:outline-none thumb-btn" data-index="0" onclick="switchGalleryImage(0)" type="button">
+<img class="w-full h-full object-cover object-top" data-alt="Model photographed outdoors in soft golden sunlight wearing The Florentine pleated satin maxi dress in soft blush rose. The luxurious fabric shimmers softly, showing full length silhouette with high neckline and sweeping train." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhSOZNSMta0ySyW0--91lBFfvwtlwVnFp2-pqL8UaxV4yrrV5Iyh2G1upRz_i_H2HgfDlJsRV8D47czipMnXINMAUINPlx54JS8VKfGm5NPypIhuNCZYai-oD0Ok7sFc9iK7fPmB3giRiekXxRSf8luFLCKuumZQAsxGQ32tLDQyuWI8OFbIB8R1yyZNIIjDaFbfFsejyepXxOb-8J0omAtB0ySTE1APRL5VnbwJ7ldoWEK7Q4klq6pQ"/>
+</button>
+<button class="relative w-16 h-20 md:w-20 md:h-24 rounded-lg overflow-hidden shrink-0 transition-all opacity-70 hover:opacity-100 focus:outline-none thumb-btn" data-index="1" onclick="switchGalleryImage(1)" type="button">
+<img class="w-full h-full object-cover" data-alt="Macro close-up shot of hand-pressed accordion pleats in organic mulberry silk satin fabric, soft blush pink hue with fine luminous sheen, showing exquisite Parisian craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMmRWni9XNCEXhlvO7AEwmsAmvEBJ6Pc0BSwtfNcKrEWZ9mUKk_lHM808npaUtiZpVxoc2R7uv-xkQQ3P3y1QYcKI61kYEUDCLyoUADqt1KhFm86l7FN0N4IRzAWk6NCeD8SBJ9ybiLUvOeI4NndSn1dZu7A7VZtzgWFOzuCoezkojjg4aX2iuJhQYcRMU5833mL8Tt-vfSAYOyInhV1Tifl3h6R_MORLXdZmznNWT5EfrgRmUY0o_pA"/>
+</button>
+<button class="relative w-16 h-20 md:w-20 md:h-24 rounded-lg overflow-hidden shrink-0 transition-all opacity-70 hover:opacity-100 focus:outline-none thumb-btn" data-index="2" onclick="switchGalleryImage(2)" type="button">
+<img class="w-full h-full object-cover object-top" data-alt="Back perspective of the elegant feminine blush maxi gown showcasing the draped open back with delicate silk self-tie sash falling along the spine in a Parisian luxury atelier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlxBJcxkV7riWBwAzd0c_BPGyBMcm44lsgBaFSmEvYeWxUkJgrdtn9stCJ_LXgducV4HIE_tDvgNkU14oxeopP3jbdWkchTQdU8kDr3UOlIWpF_PQuaMyf-oH_v-WXBPtxr4TrYHPzBq1PiGxEexSUYCZPGcadR9WcDvESav0skPdD1TC_03tb4WYNm6cjqWZkLqsl5D3CdMgJHRjs86Y-EQWlYZ6h5pgJXuYYnEDVsgpTISVN4Vr1JA"/>
+</button>
+<button class="relative w-16 h-20 md:w-20 md:h-24 rounded-lg overflow-hidden shrink-0 transition-all opacity-70 hover:opacity-100 focus:outline-none thumb-btn" data-index="3" onclick="switchGalleryImage(3)" type="button">
+<img class="w-full h-full object-cover object-top" data-alt="High-fashion editorial styling showing the blush satin dress paired with an oversized ivory tailored linen blazer and metallic clutch on modern city cobblestone streets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1a1IiS6AE4Gq6YXPqDBKj-I7YhKT83IQGiupBoqbwVnGZa5UWXGxVu3Xbxu1N0yoBXSaX0eTtjZpI_CIwWUwouBXD415tZ5GmU17j1LbdZoiwv3QOBTDktHSzhiezK1lT-S8BCR3-adlM8p_jfpf4_xyV1g4hJW9Rgi6qNi-652lsPvLAE04cnl3ji_XGvgPPgKU_0yfFGOtyiVTiurwMByKW7MEsozGKaU4D2MAs5_Fn2dj6AO3z4w"/>
+</button>
+</div>
+<!-- Hero Main Viewer -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-low shadow-sm group">
+<!-- Editorial Floating Badges -->
+<div class="absolute top-4 left-4 z-10 flex flex-col gap-1.5 pointer-events-none">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+              Sustainable Silk Blend
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+              Atelier Favorite
+            </span>
+</div>
+<!-- Zoom Prompt / Action -->
+<div class="absolute top-4 right-4 z-10">
+<button aria-label="Save to Wishlist" class="w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary shadow-sm transition-transform active:scale-90" id="wishlist-btn" onclick="toggleHeroWishlist()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="wishlist-icon">favorite_border</span>
+</button>
+</div>
+<!-- Main Image Canvas -->
+<div class="relative w-full aspect-[3/4] overflow-hidden cursor-zoom-in" id="zoom-container" onmouseleave="resetZoom()" onmousemove="handleZoom(event)">
+<img class="w-full h-full object-cover object-top transition-transform duration-300 will-change-transform" data-alt="Ultra high-definition editorial studio photography of a poised model wearing the fluid Florentine pleated satin maxi dress in soft blush rose, captured mid-movement with flowing drape and sunlit radiance in a minimalist luxury atelier setting." id="main-product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB19ngl7BOYlHMpJb-GKViRfEo7j4vIiHCvGBCwkWykC0W7dF4B5W6wY2BRZThJK4t-kXUPLt4NlwqlfJ-9OZSwR0BUggkw_TIg6O96NEZnbgJ09ZCjcM3Y30_3FvD25NoKPTzgeTaZYRjpIVP0DA9YPTqmXoiUTb7tPoNQt7ThCEBlaZhfiBlAykTSgjVR9CAjWf-sKKYZFADZTBZ1_RjGu8IfO1W5mgAeX_WLIlnXlMAI0BzMl26ITQ"/>
+</div>
+<!-- Image Carousel Controls on Mobile -->
+<div class="absolute inset-y-0 left-2 right-2 flex items-center justify-between pointer-events-none md:hidden">
+<button class="w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md pointer-events-auto flex items-center justify-center text-on-surface shadow" onclick="cycleImage(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md pointer-events-auto flex items-center justify-center text-on-surface shadow" onclick="cycleImage(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Model Specs Bottom Strip -->
+<div class="p-3 bg-surface-container-low/95 flex items-center justify-between text-on-surface-variant font-body-sm text-[12px]">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+<span>Model is 5'9" (175cm), bust 33", wearing Size S (UK 8 / US 4)</span>
+</span>
+<span class="hidden sm:inline-flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> True Atelier Cut
+            </span>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Purchase Details (5 cols = ~42%) -->
+<div class="lg:col-span-5 lg:sticky lg:top-32 space-y-space-md">
+<!-- Header & Title -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Chic N Co. Atelier Collection</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider bg-surface-container px-2 py-0.5 rounded">SKU: CH-8201-BL</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-headline-lg leading-tight">
+            The Florentine Pleated Satin Maxi Dress
+          </h1>
+<!-- Reviews Rating Summary Bar -->
+<div class="flex items-center gap-space-sm pt-1">
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<a class="font-label-md text-label-md text-on-surface underline hover:text-secondary transition-colors" href="#reviews">5.0 (142 verified reviews)</a>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">94% report true to size</span>
+</div>
+</div>
+<!-- Pricing Tier & Promo -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-price-headline text-price-headline text-on-surface font-bold text-[28px]">$148.00</span>
+<span class="font-body-md text-body-md text-on-surface-variant line-through">$185.00</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide bg-secondary-fixed text-on-secondary-fixed font-bold px-2 py-0.5 rounded-full">Save 20%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Or 4 interest-free payments of <span class="font-semibold text-on-surface">$37.00</span> with <span class="font-bold text-on-surface underline">Klarna</span> or <span class="font-bold text-on-surface underline">Afterpay</span>.
+          </p>
+</div>
+<!-- Color Selector -->
+<div class="space-y-space-xs pt-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface">
+              Color: <span class="text-secondary font-bold" id="selected-color-label">Soft Blush</span>
+</label>
+<span class="font-body-sm text-[12px] text-on-surface-variant">4 Seasonal Shades</span>
+</div>
+<div class="flex items-center gap-3">
+<!-- Soft Blush (Active) -->
+<button aria-label="Select Soft Blush" class="relative w-9 h-9 rounded-full p-0.5 ring-2 ring-primary ring-offset-2 ring-offset-surface focus:outline-none color-choice transition-transform active:scale-95" onclick="selectColor(this, 'Soft Blush')" type="button">
+<span class="block w-full h-full rounded-full shadow-inner" style="background-color: #f7d6dd;"></span>
+</button>
+<!-- Champagne Beige -->
+<button aria-label="Select Champagne Beige" class="relative w-9 h-9 rounded-full p-0.5 hover:ring-2 hover:ring-outline ring-offset-2 ring-offset-surface focus:outline-none color-choice transition-transform active:scale-95" onclick="selectColor(this, 'Champagne Beige')" type="button">
+<span class="block w-full h-full rounded-full shadow-inner" style="background-color: #f0e6d2;"></span>
+</button>
+<!-- Midnight Noir -->
+<button aria-label="Select Midnight Noir" class="relative w-9 h-9 rounded-full p-0.5 hover:ring-2 hover:ring-outline ring-offset-2 ring-offset-surface focus:outline-none color-choice transition-transform active:scale-95" onclick="selectColor(this, 'Midnight Noir')" type="button">
+<span class="block w-full h-full rounded-full shadow-inner" style="background-color: #1a1a1c;"></span>
+</button>
+<!-- Dusty Sage -->
+<button aria-label="Select Dusty Sage" class="relative w-9 h-9 rounded-full p-0.5 hover:ring-2 hover:ring-outline ring-offset-2 ring-offset-surface focus:outline-none color-choice transition-transform active:scale-95" onclick="selectColor(this, 'Dusty Sage')" type="button">
+<span class="block w-full h-full rounded-full shadow-inner" style="background-color: #9daea2;"></span>
+</button>
+</div>
+</div>
+<!-- Size Selector & Interactive Guide Trigger -->
+<div class="space-y-space-xs pt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Size:</label>
+<span class="font-label-md text-label-md font-bold text-secondary" id="selected-size-label">S</span>
+<span class="font-body-sm text-[12px] text-secondary font-medium ml-2" id="stock-hint">• Only 3 pieces left in Atelier</span>
+</div>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface hover:text-secondary underline transition-colors" onclick="openSizeModal()" type="button">
+<span class="material-symbols-outlined text-[16px]">straighten</span>
+              Size &amp; Fit Guide
+            </button>
+</div>
+<!-- Size Pills Grid: XS to 3X inclusive luxury sizing -->
+<div class="grid grid-cols-4 sm:grid-cols-8 gap-2">
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" onclick="selectSize(this, 'XS', 'In Stock (Ready to dispatch)')" type="button">XS</button>
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-sm transition-all active-size" onclick="selectSize(this, 'S', 'Only 3 pieces left in Atelier')" type="button">S</button>
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" onclick="selectSize(this, 'M', 'In Stock (Ships today)')" type="button">M</button>
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" onclick="selectSize(this, 'L', 'In Stock')" type="button">L</button>
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" onclick="selectSize(this, 'XL', 'In Stock')" type="button">XL</button>
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" onclick="selectSize(this, '1X', 'Limited Atelier Batch')" type="button">1X</button>
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" onclick="selectSize(this, '2X', 'In Stock')" type="button">2X</button>
+<button class="size-pill py-2.5 rounded-lg text-center font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" onclick="selectSize(this, '3X', 'Restocked')" type="button">3X</button>
+</div>
+</div>
+<!-- Quantity & Add to Bag Actions -->
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3">
+<!-- Counter Pill -->
+<div class="flex items-center bg-surface-container-low rounded-full px-3 py-1.5 h-12">
+<button aria-label="Decrease quantity" class="w-8 h-8 flex items-center justify-center text-on-surface hover:text-secondary transition-colors" onclick="updateQty(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface" id="qty-counter">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 flex items-center justify-center text-on-surface hover:text-secondary transition-colors" onclick="updateQty(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Primary CTA: Add to Bag -->
+<button class="flex-1 h-12 px-6 rounded-full bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-on-surface-variant hover:scale-[1.01] transition-all shadow-md active:scale-95" id="add-to-bag-btn" onclick="handleAddToCart()" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span id="cta-label">Add to Bag — $148.00</span>
+</button>
+</div>
+<!-- Instant Digital Wallet Checkout (Apple Pay / Klarna) -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="font-bold tracking-tight">Buy with</span>
+<span class="font-bold tracking-tighter text-[15px]">Pay</span>
+</button>
+<button class="h-11 rounded-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="font-bold">Klarna.</span>
+<span class="text-[11px] font-normal">Pay in 4</span>
+</button>
+</div>
+</div>
+<!-- Atelier Value Props Assurance Bar -->
+<div class="grid grid-cols-3 gap-2 pt-3">
+<div class="p-3 rounded-lg bg-surface-container-low text-center space-y-1">
+<span class="material-symbols-outlined text-[20px] text-secondary">flight_takeoff</span>
+<p class="font-label-sm text-[11px] font-bold text-on-surface leading-tight">Carbon-Neutral</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-none">Free over $120</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low text-center space-y-1">
+<span class="material-symbols-outlined text-[20px] text-secondary">restart_alt</span>
+<p class="font-label-sm text-[11px] font-bold text-on-surface leading-tight">30-Day Easy</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-none">Complimentary return</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low text-center space-y-1">
+<span class="material-symbols-outlined text-[20px] text-secondary">redeem</span>
+<p class="font-label-sm text-[11px] font-bold text-on-surface leading-tight">Gift Ready</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-none">Silk garment bag</p>
+</div>
+</div>
+<!-- Specifications & Details Accordions -->
+<div class="space-y-2 pt-4">
+<!-- Accordion 1: Product Narrative -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden">
+<button class="w-full px-5 py-4 flex items-center justify-between text-left font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-secondary transition-colors" onclick="toggleAccordion('acc-desc', 'acc-desc-icon')" type="button">
+<span>Editorial Cut &amp; Silhouette</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200" id="acc-desc-icon">expand_more</span>
+</button>
+<div class="px-5 pb-5 pt-0 text-on-surface-variant font-body-md text-body-md space-y-3" id="acc-desc">
+<p>
+                A masterclass in effortless feminine drape. The Florentine Maxi is crafted from high-density mulberry silk blended with breathable Eco-Vero viscose, tailored to create liquid-like accordion micro-pleating that dances with every stride.
+              </p>
+<ul class="list-disc list-inside space-y-1 text-body-sm font-body-sm">
+<li>Adjustable French halter neckline with delicate gold-capped silk ties</li>
+<li>Concealed side zipper with reinforced internal hook-and-eye closure</li>
+<li>Fully lined in 100% breathable organic modal silk through mid-thigh</li>
+<li>Ankle-grazing sweeping hemline with hand-rolled edge finishing</li>
+</ul>
+</div>
+</div>
+<!-- Accordion 2: Materials & Care -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden">
+<button class="w-full px-5 py-4 flex items-center justify-between text-left font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-secondary transition-colors" onclick="toggleAccordion('acc-mat', 'acc-mat-icon')" type="button">
+<span>Fabric Composition &amp; Sustainability</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200" id="acc-mat-icon">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 pt-0 text-on-surface-variant font-body-sm text-body-sm space-y-3" id="acc-mat">
+<p>
+<strong>Shell:</strong> 70% Certified Eco-Vero™ Viscose, 30% Grade-6A Mulberry Silk.<br/>
+<strong>Lining:</strong> 100% Breathable Organic Modal.<br/>
+                Certified Standard 100 by OEKO-TEX® (Zero toxic dye agents or microplastics).
+              </p>
+<div class="p-3 bg-surface-container rounded-lg space-y-1 text-[12px]">
+<span class="font-bold text-on-surface uppercase tracking-wide">Care Instructions:</span>
+<p>Dry clean gently or delicate cold hand-wash with silk-safe detergent. Lay flat on dry cotton towel in shade. Steam on lowest silk heat setting; do not press iron directly onto pleats.</p>
+</div>
+</div>
+</div>
+<!-- Accordion 3: Delivery & Complimentary Returns -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden">
+<button class="w-full px-5 py-4 flex items-center justify-between text-left font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-secondary transition-colors" onclick="toggleAccordion('acc-del', 'acc-del-icon')" type="button">
+<span>Express Delivery &amp; Returns</span>
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200" id="acc-del-icon">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 pt-0 text-on-surface-variant font-body-sm text-body-sm space-y-2" id="acc-del">
+<p>• <strong>Express Worldwide:</strong> 2–3 business days via DHL Express ($15 or free over $120).</p>
+<p>• <strong>Same-Day London &amp; NYC:</strong> Order before 1:00 PM for evening white-glove atelier delivery.</p>
+<p>• <strong>Returns:</strong> 30-day effortless return window. Prepaid shipping label included inside luxury packaging.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Editorial Interlude / Atelier Highlight Strip -->
+<section class="w-full bg-surface-container-low py-16 my-space-xl overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-5 space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">The Atelier Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+            Fluid Pleating Born in Milan, Perfected for You.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Every pleat in The Florentine is individually calibrated by master artisans to ensure the gown expands graciously when walking, yet falls into an elongated, flattering column at rest.
+          </p>
+<div class="pt-2 flex items-center gap-space-lg font-body-sm text-body-sm">
+<div>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">140+</p>
+<p class="text-on-surface-variant">Micro-pleats per piece</p>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">100%</p>
+<p class="text-on-surface-variant">Biodegradable fibers</p>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">3.2x</p>
+<p class="text-on-surface-variant">Tensile drape resilience</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-space-md">
+<div class="rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700" data-alt="Close up shot of skilled garment seamstress hands meticulously pinning micro-pleated satin fabric on an antique dressmaker form in a sunlit fashion studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9-geQeJ9XlslZbiVU55paktMNqiwAJkzbg3twg4YpCVjER4ZiN5u4748XgfEp7V-T53uB0E8KsXqnQpBz2FS5dYjfMfl-E7NvjXBNMCwbuvfDHrO4XXjRFTlhLQVw7rWiY9vwYkI6yaSpqqr7SWi8jRLN-GCZBtij2KjzPnbRkdcwqJx-j0xoH7i2VA5dYDqKfaTLZaQ5EPVYOZkvS_SvDARMC9NcMFuIovl6jbbX6WzBCSgnZBLtMg"/>
+</div>
+<div class="rounded-xl overflow-hidden shadow-md -mt-6">
+<img class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700" data-alt="High-fashion model walking in motion down an elegant marble museum hall, the blush pleated satin skirt billowing gracefully with dynamic cinematic fabric texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuIby4lZAWDDRAzw58xF8jYSVp1IGq3-wWYFpOWyvP7rwsmZITv0TVTPf7mot0qsKV0ZGzHBEjnsCL9t6QU1MH6qK-Hf03pnblKJASOy6dtQbBd1H8SqA_Mrc1rE1CAl5YOnmyjK8603f9Au2JDdM_xFrfN6BMpSDOEcxW0eZGg0VusYJp4YbwPY52LBISPmhdeor1p9JwXE3FEzjhkYRcgEXCWcLv816cXnuLt4vxkvs-GEbAv3-Hsg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews & Fit Breakdown Section -->
+<section class="max-w-[1440px] mx-auto w-full px-margin py-space-xl" id="reviews">
+<div class="space-y-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Client Reflections</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Atelier Community Reviews</h2>
+</div>
+<button class="h-11 px-6 rounded-full bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary font-label-md text-label-md uppercase tracking-wider transition-colors self-start md:self-auto" onclick="alert('Review submission form will open.')" type="button">
+          Write a Review
+        </button>
+</div>
+<!-- Rating Metrics Bento -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md p-space-lg rounded-2xl bg-surface-container-low">
+<!-- Score Column -->
+<div class="md:col-span-3 flex flex-col justify-center items-center text-center p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-display-hero text-[64px] leading-none text-on-surface font-semibold">5.0</span>
+<div class="flex items-center text-tertiary my-2">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Based on 142 Verified Orders</span>
+<span class="font-body-sm text-[12px] text-secondary font-bold mt-1">98% Recommendation Rate</span>
+</div>
+<!-- Rating Progress Bars Column -->
+<div class="md:col-span-5 flex flex-col justify-center space-y-2 p-2">
+<div class="flex items-center gap-3 font-body-sm text-body-sm">
+<span class="w-10 text-on-surface-variant font-semibold">5 Star</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+<span class="w-8 text-right text-on-surface font-semibold">88%</span>
+</div>
+<div class="flex items-center gap-3 font-body-sm text-body-sm">
+<span class="w-10 text-on-surface-variant font-semibold">4 Star</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 10%;"></div>
+</div>
+<span class="w-8 text-right text-on-surface font-semibold">10%</span>
+</div>
+<div class="flex items-center gap-3 font-body-sm text-body-sm">
+<span class="w-10 text-on-surface-variant font-semibold">3 Star</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 2%;"></div>
+</div>
+<span class="w-8 text-right text-on-surface font-semibold">2%</span>
+</div>
+<div class="flex items-center gap-3 font-body-sm text-body-sm">
+<span class="w-10 text-on-surface-variant font-semibold">2 Star</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 0%;"></div>
+</div>
+<span class="w-8 text-right text-on-surface-variant">0%</span>
+</div>
+<div class="flex items-center gap-3 font-body-sm text-body-sm">
+<span class="w-10 text-on-surface-variant font-semibold">1 Star</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 0%;"></div>
+</div>
+<span class="w-8 text-right text-on-surface-variant">0%</span>
+</div>
+</div>
+<!-- Fit Gauge Column -->
+<div class="md:col-span-4 p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-center space-y-3">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Community Fit Feedback</span>
+<div>
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant mb-1">
+<span>Runs Small</span>
+<span class="font-bold text-on-surface">True to Size (94%)</span>
+<span>Runs Large</span>
+</div>
+<div class="relative h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="absolute left-[47%] top-0 bottom-0 w-3 bg-secondary rounded-full -translate-x-1/2"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant mb-1">
+<span>Length: Petite</span>
+<span class="font-bold text-on-surface">Floor Length with 2.5" heels</span>
+<span>Length: Tall</span>
+</div>
+<div class="relative h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="absolute left-[52%] top-0 bottom-0 w-3 bg-secondary rounded-full -translate-x-1/2"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter Reviews Pills -->
+<div class="flex flex-wrap items-center gap-2 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mr-2">Filter by:</span>
+<button class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md" type="button">All Reviews (142)</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">With Customer Photos (48)</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">Size S &amp; M</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">Plus Size (1X - 3X)</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">Wedding &amp; Gala</button>
+</div>
+<!-- Reviews Feed Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Review Card 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col justify-between space-y-space-md shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">3 days ago</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">"Felt like pure royalty all evening."</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Wore this to a black-tie museum gala in Venice. The satin doesn't wrinkle even after sitting for a 3-hour dinner, and the pleating stayed crisp. The soft blush tone has an ethereal champagne shimmer in ambient candlelight.
+            </p>
+</div>
+<div class="pt-space-xs space-y-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center font-label-md text-label-md">
+                CL
+              </div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Claire L.</span>
+<span class="material-symbols-outlined text-[15px] text-secondary" title="Verified Atelier Purchaser">verified</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Size Purchased: S • 5'8", 132 lbs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col justify-between space-y-space-md shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">1 week ago</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">"Inclusive tailoring done right!"</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              As a 2X buyer, finding formal satin dresses that drape gracefully over fuller hips without pulling is rare. The pleated architecture here elongates the torso seamlessly. The bust halter is supportive and stays in place.
+            </p>
+</div>
+<div class="pt-space-xs space-y-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center font-label-md text-label-md">
+                ER
+              </div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Elena R.</span>
+<span class="material-symbols-outlined text-[15px] text-secondary" title="Verified Atelier Purchaser">verified</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Size Purchased: 2X • 5'6", 195 lbs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col justify-between space-y-space-md shadow-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant">2 weeks ago</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">"Stunning drape and quality packaging."</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Arrived within 48 hours packed inside an embroidered silk garment bag with a wooden hanger. Felt like unboxing haute couture. Took it straight on holiday to the Amalfi Coast!
+            </p>
+</div>
+<div class="pt-space-xs space-y-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center font-label-md text-label-md">
+                SM
+              </div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Sophia M.</span>
+<span class="material-symbols-outlined text-[15px] text-secondary" title="Verified Atelier Purchaser">verified</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Size Purchased: M • 5'9", 145 lbs</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "Complete The Look" / "You May Also Like" Cross-sell Carousel -->
+<section class="max-w-[1440px] mx-auto w-full px-margin py-space-xl">
+<div class="space-y-space-md">
+<div class="flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Curated Ensemble</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Complete The Look</h2>
+</div>
+<div class="hidden sm:flex items-center gap-2">
+<button aria-label="Previous items" class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" onclick="scrollCarousel(-1)" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<button aria-label="Next items" class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" onclick="scrollCarousel(1)" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Cross-sell 4-Grid Cards -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md overflow-x-auto pb-4" id="cross-sell-carousel">
+<!-- Card 1: Satin Blazer -->
+<div class="group flex flex-col space-y-space-xs min-w-[220px]">
+<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sophisticated double-breasted structured silk blend blazer in crisp champagne ivory draped over studio pedestal with subtle tailoring details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC64p6KbUKyfWSyU9r-yjL5TKD2FdZNx37aKrm1Maos6R1B0qMk-E3DNUUnrTKZIdxc8a8xOwcw5Gxsm4s-CputOEr2CAkG1-xWY4T5f9D6uJLF2lvjXMMETx0bOkiSsAN722Bkv19wAKZhWGDuqqKUY5thAMWcD0IQ2j7TdMl10jOGNgUD3wOY084QlHREjx0mKRwwy3U-7Wcsi81FSm1lvwweINhaiqJyNmefL_HgPDN3Q5GfAbNUCw"/>
+<button aria-label="Quick add" class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface hover:bg-primary hover:text-on-primary flex items-center justify-center shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-sm text-[10px] uppercase font-bold text-on-surface">Layer With</span>
+</div>
+<div class="pt-1">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Outerwear</span>
+<h4 class="font-title-editorial text-title-editorial text-on-surface font-semibold group-hover:text-secondary transition-colors truncate">The Riviera Ivory Tailored Blazer</h4>
+<p class="font-price-headline text-price-headline text-on-surface font-bold mt-0.5">$180.00</p>
+</div>
+</div>
+<!-- Card 2: Kitten Heels -->
+<div class="group flex flex-col space-y-space-xs min-w-[220px]">
+<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist metallic rose gold strappy kitten heel sandals arranged gracefully on warm alabaster stone slab." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc_k1oAh6NMW1DVby05dUhyNIW-iTG46R4yGaSDWr6v6kACBMzxjIW6uKuhgjHYCr1DaIP_eJHoQ35WIBy9OQ8bFnETxmUPA4CYxZF8nJHTzca_jvZZ8gO1g0eR3lRzWvXz8-XgpOTm9MLOvRGLlHZVqXEyucKQzD-asDU-2gnXOXIWsPboVLAcgrnM4TH8wsMWUc21oBiHuOsrR_dTFtz4FHWeSbrbWRID8gtJl0cgSyf0FJJ9-mXAw"/>
+<button aria-label="Quick add" class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface hover:bg-primary hover:text-on-primary flex items-center justify-center shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-sm text-[10px] uppercase font-bold text-secondary">Matching Tone</span>
+</div>
+<div class="pt-1">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Footwear</span>
+<h4 class="font-title-editorial text-title-editorial text-on-surface font-semibold group-hover:text-secondary transition-colors truncate">Palermo Metallic Strappy Kitten Heels</h4>
+<p class="font-price-headline text-price-headline text-on-surface font-bold mt-0.5">$125.00</p>
+</div>
+</div>
+<!-- Card 3: Pearl Earrings -->
+<div class="group flex flex-col space-y-space-xs min-w-[220px]">
+<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Baroque freshwater pearl drop earrings with 18k vermeil gold organic links displayed on fine linen textile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgoVagtpuyXD7G0OmtlTFzAHS40iwXEoPQyIjYZgGfEEigWg_BR2P3GKvdZ0F-PjrGz0PO8U-AQTWw-Tk1SLKn37l5S_OL1U02QudPyaFV8HjhXwoGW_dPID6MdeqzXXQTS_0NEU-mJgbVIVsxB-ZLYySTAN8q0ZJefflJMcZr1F1xkLnit4CaKEaZYfvcmln031iE1j7YiehVDucSVSwqekg6DW1VEP4dKa1zaWjkMmNrxELPQnKZJg"/>
+<button aria-label="Quick add" class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface hover:bg-primary hover:text-on-primary flex items-center justify-center shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-sm text-[10px] uppercase font-bold text-on-surface">Jewelry</span>
+</div>
+<div class="pt-1">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Fine Jewelry</span>
+<h4 class="font-title-editorial text-title-editorial text-on-surface font-semibold group-hover:text-secondary transition-colors truncate">Baroque Pearl Drop Earrings 18k</h4>
+<p class="font-price-headline text-price-headline text-on-surface font-bold mt-0.5">$68.00</p>
+</div>
+</div>
+<!-- Card 4: Quilted Leather Clutch -->
+<div class="group flex flex-col space-y-space-xs min-w-[220px]">
+<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Buttery soft lambskin quilted envelope evening clutch in blush nude tone with delicate gold chain strap." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtJaXYDVUWpxBNDKOEmVsg5oCl9DKHfgKz83ziaY3qLQ08Qcoq0ADbhWvnkYOdO3zVFrfmHna5PDhLu41VkpoSl68csmQI0Eu-b1uOaWsD2sPcvownsHPut6_RjgwRVKNb68bWIGiKVoFlqwBU8Yb-O2wzjNLBB0SFANDML2Qm3jJ-xKUpV_aMF8Nhr75rSsMSL9W7lMgH_h_2L7CaPT8OqojCYymvq-SKCR_Cij6kbjzx2hEIj43qOA"/>
+<button aria-label="Quick add" class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface hover:bg-primary hover:text-on-primary flex items-center justify-center shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-sm text-[10px] uppercase font-bold text-on-surface">Accessories</span>
+</div>
+<div class="pt-1">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Evening Bags</span>
+<h4 class="font-title-editorial text-title-editorial text-on-surface font-semibold group-hover:text-secondary transition-colors truncate">The Roma Quilted Lambskin Clutch</h4>
+<p class="font-price-headline text-price-headline text-on-surface font-bold mt-0.5">$110.00</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Size Chart & Fit Assistant Modal (Hidden by default) -->
+<div aria-labelledby="size-modal-title" aria-modal="true" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-primary-container/60 backdrop-blur-sm" id="size-modal" role="dialog">
+<div class="relative w-full max-w-2xl bg-surface rounded-2xl shadow-2xl p-6 md:p-8 space-y-space-md max-h-[921px] overflow-y-auto">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">straighten</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="size-modal-title">Atelier Sizing &amp; Measurement Guide</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface" onclick="closeSizeModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        All Chic N Co. silhouettes are cut with generous ease around hips while contouring naturally at the bust and ribcage. Compare your body measurements in inches below.
+      </p>
+<!-- Sizing Matrix Table -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-low p-2">
+<table class="w-full text-left font-body-sm text-[13px]">
+<thead>
+<tr class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant">
+<th class="py-2.5 px-3">Size</th>
+<th class="py-2.5 px-3">US / UK</th>
+<th class="py-2.5 px-3">Bust (in)</th>
+<th class="py-2.5 px-3">Waist (in)</th>
+<th class="py-2.5 px-3">Hips (in)</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<tr class="hover:bg-surface-container">
+<td class="py-2 px-3 font-bold">XS</td>
+<td class="py-2 px-3">US 0-2 / UK 4-6</td>
+<td class="py-2 px-3">31.5 - 32.5"</td>
+<td class="py-2 px-3">24.5 - 25.5"</td>
+<td class="py-2 px-3">34.5 - 35.5"</td>
+</tr>
+<tr class="bg-secondary-fixed/20 font-semibold">
+<td class="py-2 px-3 font-bold text-secondary">S (Current)</td>
+<td class="py-2 px-3">US 4 / UK 8</td>
+<td class="py-2 px-3">33.5 - 34.5"</td>
+<td class="py-2 px-3">26.5 - 27.5"</td>
+<td class="py-2 px-3">36.5 - 37.5"</td>
+</tr>
+<tr class="hover:bg-surface-container">
+<td class="py-2 px-3 font-bold">M</td>
+<td class="py-2 px-3">US 6-8 / UK 10-12</td>
+<td class="py-2 px-3">35.5 - 36.5"</td>
+<td class="py-2 px-3">28.5 - 29.5"</td>
+<td class="py-2 px-3">38.5 - 39.5"</td>
+</tr>
+<tr class="hover:bg-surface-container">
+<td class="py-2 px-3 font-bold">L</td>
+<td class="py-2 px-3">US 10-12 / UK 14-16</td>
+<td class="py-2 px-3">38.0 - 39.5"</td>
+<td class="py-2 px-3">31.0 - 32.5"</td>
+<td class="py-2 px-3">41.0 - 42.5"</td>
+</tr>
+<tr class="hover:bg-surface-container">
+<td class="py-2 px-3 font-bold">XL</td>
+<td class="py-2 px-3">US 14 / UK 18</td>
+<td class="py-2 px-3">41.0 - 42.5"</td>
+<td class="py-2 px-3">34.0 - 35.5"</td>
+<td class="py-2 px-3">44.0 - 45.5"</td>
+</tr>
+<tr class="hover:bg-surface-container">
+<td class="py-2 px-3 font-bold">1X</td>
+<td class="py-2 px-3">US 16W / UK 20</td>
+<td class="py-2 px-3">44.0 - 46.0"</td>
+<td class="py-2 px-3">37.0 - 39.0"</td>
+<td class="py-2 px-3">47.0 - 49.0"</td>
+</tr>
+<tr class="hover:bg-surface-container">
+<td class="py-2 px-3 font-bold">2X</td>
+<td class="py-2 px-3">US 18W-20W / UK 22-24</td>
+<td class="py-2 px-3">48.0 - 50.0"</td>
+<td class="py-2 px-3">41.0 - 43.0"</td>
+<td class="py-2 px-3">51.0 - 53.0"</td>
+</tr>
+<tr class="hover:bg-surface-container">
+<td class="py-2 px-3 font-bold">3X</td>
+<td class="py-2 px-3">US 22W-24W / UK 26-28</td>
+<td class="py-2 px-3">52.0 - 54.0"</td>
+<td class="py-2 px-3">45.0 - 47.0"</td>
+<td class="py-2 px-3">55.0 - 57.0"</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-2">
+<p class="font-body-sm text-[12px] text-on-surface-variant">Need personalized bespoke advice? Our Parisian atelier stylists reply via live chat.</p>
+<button class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-on-surface-variant transition-colors" onclick="closeSizeModal()" type="button">
+          Got It
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback Container -->
+<div class="fixed bottom-6 right-6 z-50 hidden transform transition-all duration-300 translate-y-4 opacity-0" id="cart-toast">
+<div class="flex items-center gap-3 bg-primary text-on-primary px-5 py-3.5 rounded-2xl shadow-xl">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">check_circle</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-primary">Added to Atelier Bag</p>
+<p class="font-body-sm text-[12px] text-primary-fixed-dim" id="toast-desc">The Florentine Pleated Maxi (Soft Blush, Size S)</p>
+</div>
+</div>
+</div>
+<!-- Interactive Logic Script -->
+<script>
+    let currentQty = 1;
+    let selectedSize = 'S';
+    let selectedColor = 'Soft Blush';
+    let currentImageIndex = 0;
+
+    const galleryImages = [
+      {
+        src: "placeholder",
+        alt: "Model photographed outdoors in soft golden sunlight wearing The Florentine pleated satin maxi dress in soft blush rose. The luxurious fabric shimmers softly, showing full length silhouette with high neckline and sweeping train."
+      },
+      {
+        src: "placeholder",
+        alt: "Macro close-up shot of hand-pressed accordion pleats in organic mulberry silk satin fabric, soft blush pink hue with fine luminous sheen, showing exquisite Parisian craftsmanship."
+      },
+      {
+        src: "placeholder",
+        alt: "Back perspective of the elegant feminine blush maxi gown showcasing the draped open back with delicate silk self-tie sash falling along the spine in a Parisian luxury atelier."
+      },
+      {
+        src: "placeholder",
+        alt: "High-fashion editorial styling showing the blush satin dress paired with an oversized ivory tailored linen blazer and metallic clutch on modern city cobblestone streets."
+      }
+    ];
+
+    function switchGalleryImage(index) {
+      currentImageIndex = index;
+      const mainImg = document.getElementById('main-product-img');
+      mainImg.src = galleryImages[index].src;
+      mainImg.setAttribute('data-alt', galleryImages[index].alt);
+
+      const buttons = document.querySelectorAll('.thumb-btn');
+      buttons.forEach((btn, idx) => {
+        if (idx === index) {
+          btn.classList.remove('opacity-70');
+          btn.classList.add('ring-2', 'ring-primary');
+        } else {
+          btn.classList.add('opacity-70');
+          btn.classList.remove('ring-2', 'ring-primary');
+        }
+      });
+    }
+
+    function cycleImage(direction) {
+      let nextIndex = currentImageIndex + direction;
+      if (nextIndex < 0) nextIndex = galleryImages.length - 1;
+      if (nextIndex >= galleryImages.length) nextIndex = 0;
+      switchGalleryImage(nextIndex);
+    }
+
+    function handleZoom(e) {
+      const container = document.getElementById('zoom-container');
+      const img = document.getElementById('main-product-img');
+      const rect = container.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      img.style.transformOrigin = `${x}% ${y}%`;
+      img.style.transform = 'scale(1.7)';
+    }
+
+    function resetZoom() {
+      const img = document.getElementById('main-product-img');
+      img.style.transform = 'scale(1)';
+      img.style.transformOrigin = 'center center';
+    }
+
+    function selectColor(btn, colorName) {
+      selectedColor = colorName;
+      document.getElementById('selected-color-label').innerText = colorName;
+      document.querySelectorAll('.color-choice').forEach(el => {
+        el.classList.remove('ring-2', 'ring-primary');
+        el.classList.add('hover:ring-2', 'hover:ring-outline');
+      });
+      btn.classList.add('ring-2', 'ring-primary');
+      btn.classList.remove('hover:ring-2', 'hover:ring-outline');
+    }
+
+    function selectSize(btn, sizeVal, stockText) {
+      selectedSize = sizeVal;
+      document.getElementById('selected-size-label').innerText = sizeVal;
+      document.getElementById('stock-hint').innerText = '• ' + stockText;
+
+      document.querySelectorAll('.size-pill').forEach(el => {
+        el.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm', 'active-size');
+        el.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm', 'active-size');
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+    }
+
+    function updateQty(delta) {
+      currentQty = Math.max(1, currentQty + delta);
+      document.getElementById('qty-counter').innerText = currentQty;
+      const total = (148.00 * currentQty).toFixed(2);
+      document.getElementById('cta-label').innerText = `Add to Bag — $${total}`;
+    }
+
+    function toggleHeroWishlist() {
+      const icon = document.getElementById('wishlist-icon');
+      if (icon.innerText === 'favorite') {
+        icon.innerText = 'favorite_border';
+        icon.classList.remove('text-secondary');
+      } else {
+        icon.innerText = 'favorite';
+        icon.classList.add('text-secondary');
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    }
+
+    function toggleAccordion(contentId, iconId) {
+      const content = document.getElementById(contentId);
+      const icon = document.getElementById(iconId);
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    function openSizeModal() {
+      document.getElementById('size-modal').classList.remove('hidden');
+    }
+
+    function closeSizeModal() {
+      document.getElementById('size-modal').classList.add('hidden');
+    }
+
+    function handleAddToCart() {
+      const btn = document.getElementById('add-to-bag-btn');
+      const originalText = document.getElementById('cta-label').innerText;
+      btn.classList.add('opacity-80', 'scale-95');
+      document.getElementById('cta-label').innerText = 'Added to Bag...';
+
+      const toast = document.getElementById('cart-toast');
+      const toastDesc = document.getElementById('toast-desc');
+      toastDesc.innerText = `The Florentine Maxi (${selectedColor}, Size ${selectedSize}, Qty: ${currentQty})`;
+
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+      }, 50);
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-4', 'opacity-0');
+        setTimeout(() => toast.classList.add('hidden'), 300);
+        btn.classList.remove('opacity-80', 'scale-95');
+        document.getElementById('cta-label').innerText = originalText;
+      }, 3000);
+    }
+
+    function scrollCarousel(dir) {
+      const carousel = document.getElementById('cross-sell-carousel');
+      carousel.scrollBy({ left: dir * 260, behavior: 'smooth' });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low pt-16 pb-12 mt-space-xl"><div class="max-w-[1440px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-16"><div class="lg:col-span-4 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Chic N Co. Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XxsK-IQFDu8j8W5jnMqIUjMpnb6mgGBvYX-eomQMvfpkVb5mkgCpTodUIfzORDdt2OMSSUmphL2XZymRFuq1F3p2jGeQbNkOdiw_WbbJP_SrX24UZYtq2DPfO-gieFKMWZ61awkKhRWI4uCTRpS6a8bLtgMzi7PV5YEKavrbTuBgYtXkVFKE6V0beWPmd0dwqYdzntui-cS2PwLkEO4qJDkRx74FwU_feMXqWgrGqIVNsIaSwyAMdPvpao"/><span class="font-title-editorial text-title-editorial uppercase text-on-surface">Chic N Co.</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Style That Fits You. Thoughtfully designed fashion celebrating confident femininity and inclusive silhouettes.</p><div class="flex items-center gap-space-md pt-space-xs"><a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Pinterest" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">push_pin</span></a><a aria-label="TikTok" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">play_circle</span></a><a aria-label="Vogue Runway" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">auto_stories</span></a></div></div><div class="lg:col-span-2 space-y-space-md"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Quick Links</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" href="#">Shop All</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Dresses</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Co-ords</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Tops &amp; Blouses</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Plus Size Atelier</a></li><li><a class="hover:text-on-surface transition-colors" href="#">New Arrivals</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Gift Cards</a></li></ul></div><div class="lg:col-span-2 space-y-space-md"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Customer Concierge</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" href="#">Track Order</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Shipping &amp; Delivery</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Easy 30-Day Returns</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Size Guide &amp; Fit Assistant</a></li><li><a class="hover:text-on-surface transition-colors" href="#">FAQs</a></li></ul></div><div class="lg:col-span-4 space-y-space-md"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Join the VIP Atelier</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Receive private runway invitations, early seasonal lookbook access, and complimentary tailoring privileges.</p><form class="space-y-space-xs" onsubmit="return false;"><div class="flex gap-space-xs"><input class="flex-1 h-12 px-4 rounded-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm shadow-[0_1px_4px_rgba(0,0,0,0.02)] focus:outline-none" placeholder="Enter your atelier email" type="email"/><button class="px-6 h-12 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-on-surface-variant transition-colors" type="submit">Join Atelier</button></div><p class="font-body-sm text-[11px] text-on-surface-variant">By subscribing, you agree to our Privacy Policy and exclusive newsletter communications.</p></form></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 Chic N Co. All rights reserved.</span><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Cookie Settings</a></div><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-[20px]" title="Visa">credit_card</span><span class="material-symbols-outlined text-[20px]" title="Mastercard">contactless</span><span class="material-symbols-outlined text-[20px]" title="Amex">payments</span><span class="material-symbols-outlined text-[20px]" title="Apple Pay">phone_iphone</span><span class="material-symbols-outlined text-[20px]" title="Klarna">account_balance_wallet</span><span class="material-symbols-outlined text-[20px]" title="PayPal">account_balance</span></div></div></div></footer></body></html>
