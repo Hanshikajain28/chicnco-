@@ -1,0 +1,9 @@
+{
+  "name": "chic-n-co-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "start": "node backend/server.js"
+  }
+}
