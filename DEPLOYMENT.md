@@ -55,7 +55,7 @@ This guide walks you through deploying the **Chic N Co.** luxury fashion e-comme
 4. Configure the service settings:
    - **Name**: `chic-n-co-backend`
    - **Region**: Closest to your target audience (e.g., *Oregon (US West)* or *Frankfurt (EU)*)
-   - **Branch**: `main`
+   - **Branch**: `master` (or `main`)
    - **Root Directory**: `backend`
    - **Runtime**: `Node`
    - **Build Command**: `npm install`
@@ -85,7 +85,7 @@ This guide walks you through deploying the **Chic N Co.** luxury fashion e-comme
 3. Select your repository.
 4. In **Set up builds and deployments**:
    - **Project name**: `chic-n-co`
-   - **Production branch**: `main`
+   - **Production branch**: `master` (or `main`)
    - **Framework preset**: `Vite`
    - **Root directory**: `frontend`
    - **Build command**: `npm run build`
